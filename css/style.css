@@ -1,0 +1,336 @@
+/* common css start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-center{
+    align-items: center;
+}
+ul,ol{
+    list-style-type: none;
+}
+.btn{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 800;
+    color: #0b1016;
+    background-color: #cfc91d;
+    padding: 19px 43px;
+    display: inline-block;
+    
+}
+.btn:hover{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 800;
+    color: black;
+    background-color: #7e8287;
+    padding: 25px 46px;
+    display: inline-block;
+    transform: cubic-bezier(.98,0,0,1.01);
+    transition: 0.3s;
+    border: 1px solid black;
+}
+
+.heading h1{
+    font-size: 42px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #02918c;
+    
+}
+.heading p{
+      font-size: 16px;
+      font-weight: 400;
+      margin: 10px 0;
+}
+.sectiontitle p{
+    color: #a0a3a7;
+    line-height: 40px;
+}
+.sectiontitle p span{
+    font-size: 23px;
+    font-weight: 800;
+    color: #7e8287;
+}
+.card i{
+    color: #02918c;
+    font-size: 30px;
+}
+.card h4{
+    color: #7e8287;
+    font-size: 16px;
+    font-weight: 800;
+    margin: 25px 0;
+}
+.card p{
+    color: #7e8287;
+    font-size: 11px;
+    font-weight: 400;
+    
+}
+/* common css end */
+/* nav bar start */
+nav{
+    background-color: #02918c;
+}
+nav .row{
+    align-items: center;
+}
+nav .logo{
+    width: 30%;
+}
+nav .menu{
+    width: 70%;
+    text-align: right;
+}
+nav .menu ul li{
+    display: inline-block;
+}
+nav .menu ul li a{
+    color: white;
+    font-weight: 800;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 25px 26px;
+    display: inline-block;
+}
+nav ul li .submenu{
+    position: absolute;
+    border: 1px solid #ccc;
+    opacity: 0;
+    visibility: hidden;
+}
+nav ul li .submenu li a{
+    color: white;
+    text-align: center;
+}
+nav ul li .submenu li{
+    display: block;
+    padding: 10px 18px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+   
+}
+nav ul li:hover .submenu{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+}
+/* nav bar end */
+/* bannar start */
+#banner{
+    background-image: url(../css/rahat\ bannar\ .jpg);
+    height: 728px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+#banner .row{
+    height: 100%;
+}
+#banner .banner_cnt{
+    width: 100%;
+}
+#banner .banner_cnt h5{
+    font-size: 30px;
+    font-weight: 400;
+}
+#banner .banner_cnt h1{
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 30px ;
+}
+#banner .banner_cnt img{
+    margin: 50px 0;
+}
+/* banner end */
+/* About us start */
+#about{
+    padding: 99px 0;
+    text-align: center;
+}
+#about .aboutcards{
+    margin-top: 53px;
+}
+#about .aboutcards .card{
+    width: 25%;
+    border-right: 1px solid #c2c2c2;
+    padding: 68px 0;
+}
+#about .aboutcards .card:last-child{
+    border: none;
+}
+
+.icon{
+    width: 15%;
+    padding: 15px 75px 75px 0;
+}
+
+
+/* About us End */
+#service {
+    background-image: url(./banner.jpg);
+    background-size: cover;
+    padding: 74px 0;
+    transition: 0.50s;
+    background-position: center;
+    text-align: justify;
+    height: 728px;
+}
+#service .row{
+    width: 100%;
+}
+
+#service .about h1{
+      color: #02918c;
+      font-size: 32px;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 32px 0;
+      
+}
+#service .about_card .card1 span{
+    color: #02918c;
+    font-size: 32px;
+    padding: 35px 0;
+   
+}
+#service .about_card .card p{
+    color: #7e8287;
+    font-size: 16px;
+
+}
+#service .about_card .card{
+    padding: 32px 10px;
+}
+#service .about_card{
+    margin-top: 70px;
+    width: 25%;
+   padding: 28px 0;
+    
+}
+
+
+
+#work .workcard{
+    width: 25%;
+    position: relative;
+}
+#work .workcard h4{
+    height: 800;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#work .workcard p{
+    height: 400;
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 0;
+}
+#work .workcard img{
+    width: 100%;
+    display: block;
+}
+#work .workcard .overlay{
+    background-color: rgba(0, 0, 0, 0.58);
+    position: absolute;
+    top: 28px;
+    bottom: 28px;
+    left: 21px;
+    right: 21px;
+    color: white;
+    padding: 61px 29px;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 80px;
+
+}
+#work .workcard:hover .overlay{
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+    transition:0.5s ;
+}
+#contact{
+    background-color: #0b0b0b;
+    height: 562px;
+    padding: 70px 0;
+    text-align: center;
+}
+
+#contact .formInput{
+    width: 638px;
+
+    margin: auto ;
+}
+#contact .formInput input{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0 ;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    margin-top: 64px ;
+    outline: none;
+    
+}
+#contact .formInput:nth-child(1){
+    margin-top: 0;
+   
+}
+#contact .formInput:nth-child(3){
+    width: 918px;
+}
+#contact .formInput:nth-child(4){
+    width: 918px;
+}
+#last .black p{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#about .aboutimg{
+    width: 50%;
+}
+#about .abouttext{
+    width: 50%;
+}
+#bgcolor{
+    background-image: url(../css/service-banar.jpg);
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#bgcolor .para{
+    font-family: arial black;
+    text-transform: uppercase;
+   justify-content: center;
+    width: 100%;
+    padding: 50px;
+    top: 50px;
+}
+
+
+
+
+
+
